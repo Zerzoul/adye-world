@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -12,17 +13,32 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.App{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 
 /* --- HEADER --- */
+header{
+  z-index: 2;
+}
 .app-header{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 530px;
-  width: 2000px;
-  background:no-repeat linear-gradient(181deg, rgba(0, 0, 0, 0), rgba(100, 79, 144, 1)), url("../assets/bg-header.jpg");
+  height: 75vh;
+  width: 99vw;
   box-shadow: 0 4px 15px -2px black;
+  background: no-repeat center center fixed linear-gradient(181deg, rgba(0, 0, 0, 0), rgba(100, 79, 144, 1)), url("../assets/bg-header.jpg");
+  -webkit-background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 .app-header-logo{
   margin-top: 200px ;
@@ -41,9 +57,34 @@ code {
 .app-header-avatar img{
   height: 350px;
 }
+/* --- CONTENT ---*/
+.app-content{
+  width: 85vw;
+  padding-top: 160px;
+  margin: 0 90px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 7px 13px 0px black;
+}
 
 /* --- NAVBAR --- */
 
-.app-navbar{
+.app-nav-link{
+  list-style-type: none;
   display: flex;
+}
+.app-nav-link li{
+  margin: 0 100px;
+}
+.app-nav-link a{
+  text-decoration: none;
+  color: white;
+  font-size: 1.3em;
+}
+.app-nav-link a:hover,
+.app-nav-link a:focus{
+  text-decoration: underline;
+  color: #f6a8c0;
+  cursor: pointer;
 }

@@ -1,6 +1,6 @@
 const NavBar = () => {
     return (
-        <nav className="app-navbar">
+        <nav>
             <ul className="app-nav-link">
                 <li><a href="#rules">Les règles</a></li>
                 <li><a href="#cities">Les villes</a></li>
