@@ -1,9 +1,13 @@
+import Header from "./Header";
+import NavBar from "./NavBar";
+
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Adye World</h1>
-      </header>
+        <Header />
+        <div className="app-body">
+          <NavBar />
+        </div>
     </div>
   );
 }
